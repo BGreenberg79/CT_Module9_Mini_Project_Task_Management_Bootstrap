@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Task management app home page">
+        <meta name="keywords" content="home, task management, tool">
+        <meta name="author" content="Ben Greenberg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">   
+        <!-- Use JSDelivr for cached version of bootstrap -->
+    </head>
+    <body>
+        <header>
+            <div class="container-fluid" id="home">    
+                <nav class="navbar navbar-expand-sm navbar-white bg-info fixed-top">
+                    <button 
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    class="navbar-toggler"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    >Sections</button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active"><a href=home.html class="nav-link text-white">Home</a></li>
+                            <li class="nav-item active"><a href=register.html class="nav-link text-white">Register</a></li>
+                            <li class="nav-item active"><a href=authenticate.html class="nav-link text-white">Log In</a></li>
+                            <li class="nav-item active"><a href=create.html class="nav-link text-white">New Task</a></li>
+                            <li class="nav-item active"><a href=details.html class="nav-link text-white">Task Details</a></li>
+                            <li class="nav-item active"><a href=dashboard.html class="nav-link text-white">Task Dashboard</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- Responsive Nav bar inside it's own container in the header -->
+        </header>
+        <main>
+            <div class="container py-3">
+                <div class="p-3 mb-4 bg-danger rounded-3">
+                    <div class="container-fluid py-4">
+                        <h1 class="display-5 fw-bold">Welcome to the Task Management App</h1>
+                        <p class="col-md-8 col-12 fs-4">This app will allow you to create a list of tasks and manage them to keep you better organized.</p>
+                        <!-- Key features -->
+                    </div>
+                </div>
+            </div>
+            <!-- Use grid layout to configure three tabs displaying app features in bootstrap cards -->
+            <div class="container fluid mt-2">
+                <div class="row">
+                    <div class="col-md-4 col-12 my-3">
+                        <div class="card">
+                            <img src="editing.jpg" class="card-img-top" alt="Editing image computer">
+                            <div class="card-body">
+                              <h5 class="card-title">Edit Task List</h5>
+                              <p class="card-text">Head over to the Task Dashboard page to edit any and all of the tasks on your to do list.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 my-3">
+                        <div class="card">
+                            <img src="cybersecurity.jpg" class="card-img-top" alt="cybersecurity code image">
+                            <div class="card-body">
+                              <h5 class="card-title">Account Security</h5>
+                              <p class="card-text">Authentication is used on every one of our forms to make sure your log in is safe and valid.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4 col-12 my-3">
+                        <div class="card">
+                            <img src="time_management.jpg" class="card-img-top" alt="clock picture">
+                            <div class="card-body">
+                              <h5 class="card-title">Better Time Management</h5>
+                              <p class="card-text">Manage your time better and enhance your efficiency by keeping tabs on all of your day to day tasks.</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!-- Bootstrap script via JSdelivr -->
+    </body>
+</html>
